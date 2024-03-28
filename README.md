@@ -275,7 +275,7 @@ public class WaitNotifyExample {
 ```
 In this example:
 
-We have a shared object `lock` used for synchronization.The `waiterThread` waits until flag becomes true, and it releases the lock by calling `wait() `on lock.The `notifierThread` performs some task, sets flag to true, and notifies one waiting thread using `notify()` on lock.
+We have a shared object `lock` used for synchronization. The `waiterThread` waits until the flag becomes true, and it releases the lock by calling `wait() `on lock.The `notifierThread` performs some task, sets a flag to true, and notifies one waiting thread using `notify()` on lock.
 
 You can also replace `lock.notify()` with `lock.notifyAll()` to notify all waiting threads instead of just one. However, in this case, since there's only one waiting thread, using either `notify()` or `notifyAll()` achieves the same result.
 
@@ -290,7 +290,7 @@ The `ExecutorService` interface represents an asynchronous execution service tha
 #### Key Methods:
 - `submit(Runnable task)`: Submits a Runnable task for execution and returns a Future representing the task's result.
 - `shutdown()`: Initiates an orderly shutdown of the ExecutorService, allowing previously submitted tasks to execute before terminating.
-- `shutdownNow()`: Attempts to stop all actively executing tasks, halts the processing of waiting tasks, and returns a list of tasks that were awaiting execution.
+- `shutdownNow()`: Attempts to stop all actively executing tasks, halts the processing of waiting tasks and returns a list of tasks that were awaiting execution.
 
 ### 2. ThreadPoolExecutor Class
 The `ThreadPoolExecutor` class is a concrete implementation of the `ExecutorService` interface, providing a flexible and configurable thread pool for executing tasks.
@@ -342,4 +342,4 @@ public class ThreadListExample {
 ```
 In this example:
 
-We create a list threads containing instances of the Thread class.Each thread in the list simulates some work by printing a start message, sleeping for 1 second, and then printing a completion message.We create an ExecutorService with a fixed-size thread pool of 2 threads using Executors.newFixedThreadPool(2).We submit all threads for execution using executor.submit(thread).The ExecutorService ensures that at most two threads execute concurrently due to the fixed-size thread pool.Finally, we shut down the ExecutorService after all threads have been submitted.
+We create a list of threads containing instances of the Thread class. Each thread in the list simulates some work by printing a start message, sleeping for 1 second, and then printing a completion message. We create an ExecutorService with a fixed-size thread pool of 2 threads using Executors.newFixedThreadPool(2). We submit all threads for execution using the executor. submit(thread).The ExecutorService ensures that at most two threads execute concurrently due to the fixed-size thread pool. Finally, we shut down the ExecutorService after all threads have been submitted.
