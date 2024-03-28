@@ -1,16 +1,16 @@
 # README: Java Threading Concepts
 
 ## Table of Contents
-"1. [Introduction to Threads in Java](#introduction-to-threads-in-java)\n" +
-"2. [Making a Class a Thread in Java](#making-a-class-a-thread-in-java)\n" +
-"3. [Using the Sleep Keyword in Threading](#using-the-sleep-keyword-in-threading)\n" +
-"4. [Synchronization in Threading](#synchronization-in-threading)\n" +
-"5. [Understanding Reentrant Lock in Threading](#understanding-reentrant-lock-in-threading)\n" +
-"6. [Understanding wait, notify, and notifyAll in Threading](#understanding-wait-notify-and-notifyall-in-threading)\n" +
-"7. [Understanding Executor Service in Threading](#understanding-executor-service-in-threading)\n\n" +
+- [Introduction to Threads in Java](#introduction-to-threads-in-java)
+- [Making a Class a Thread in Java](#making-a-class-a-thread-in-java)
+- [Using the Sleep Keyword in Threading](#using-the-sleep-keyword-in-threading)
+- [Synchronization in Threading](#synchronization-in-threading)
+- [Understanding Reentrant Lock in Threading](#understanding-reentrant-lock-in-threading)
+- [Understanding wait, notify, and notifyAll in Threading](#understanding-wait-notify-and-notifyall-in-threading)
+- [Understanding Executor Service in Threading](#understanding-executor-service-in-threading)
 
 ## Introduction to Threads in Java
-Welcome to the README file for understanding threads in Java! In this document, we'll explore the concept of threads in Java programming using simple and straightforward language.
+Welcome to the README file for understanding threads in Java! In this document, we'll explore the concept of threads in Java programming using a simple language.
 
 Threads are like little workers in a big factory (your Java program). They help your program do multiple things at once, making it faster and more efficient. Imagine you're cooking dinner in your kitchen. You might be chopping vegetables while the water is boiling on the stove. These tasks happen simultaneously, just like threads in Java.
 
